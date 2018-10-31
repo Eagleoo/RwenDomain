@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+    android:background="@drawable/btn_background3"
+    android:layout_marginBottom="10dp">
+
+    <LinearLayout
+        android:id="@+id/rowBG"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:gravity="right"
+        android:orientation="horizontal">
+
+
+        <RelativeLayout
+            android:id="@+id/add"
+            android:layout_width="@dimen/swipeWidth"
+            android:layout_height="match_parent"
+            android:background="@color/swipeoption_blue"
+            android:clickable="true"
+            android:focusable="true"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:background="?android:selectableItemBackground"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_remove_red_eye_black_24dp"
+                    android:tint="@android:color/white"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="4dp"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:text="查看"
+                    android:textColor="@android:color/white"
+                    android:textSize="12sp"/>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/edit"
+            android:layout_width="@dimen/swipeWidth"
+            android:layout_height="match_parent"
+            android:background="@color/swipeoption_green"
+            android:clickable="true"
+            android:focusable="true"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:background="?android:selectableItemBackground"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/ic_mode_edit_black_24dp"
+                    android:tint="@android:color/white"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="4dp"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:text="修改"
+                    android:textColor="@android:color/white"
+                    android:textSize="12sp"/>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/change1"
+            android:layout_width="@dimen/swipeWidth"
+            android:layout_height="match_parent"
+            android:background="@color/swipeoption_purple"
+            android:clickable="true"
+            android:focusable="true"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:background="?android:selectableItemBackground"
+                android:gravity="center_vertical|left"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:tint="@android:color/white"
+                    android:src="@drawable/ic_delete_forever_black_24dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="4dp"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:text="删除"
+                    android:textColor="@android:color/white"
+                    android:textSize="12sp"/>
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/rowFG"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:clickable="true"
+        android:elevation="4dp"
+        android:focusable="true"
+        android:orientation="horizontal"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/separator_background"
+            android:orientation="horizontal"
+            android:paddingBottom="16dp"
+            android:paddingLeft="16dp"
+            android:paddingTop="16dp"
+            >
+
+            <TextView
+                android:id="@+id/delete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="10dp"
+                android:visibility="gone"
+                android:background="@drawable/del"/>
+
+            <ImageView
+                android:id="@+id/icon"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/logo5"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="10dp"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="6"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/mainText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:text="No Calls Found"
+                    android:textSize="16sp"
+                    tools:text="Row 1"
+                    android:textStyle="bold"
+                    android:textColor="@color/swipeoption_blue" />
+
+                <TextView
+                    android:id="@+id/subText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:maxLines="1"
+
+                    tools:text="Some text ..."
+                    android:textColor="#ff6600"/>
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="剩余时间："
+                android:layout_gravity="center_vertical"
+                android:textSize="13sp"/>
+            <TextView
+                android:id="@+id/date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="50"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="20dp"
+                android:textSize="15sp"
+                android:textColor="#000"/>
+
+            <ImageView
+                android:id="@+id/rowButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center_vertical"
+                android:gravity="right|center_vertical"
+                android:layout_marginRight="7dip"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:src="@drawable/right" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

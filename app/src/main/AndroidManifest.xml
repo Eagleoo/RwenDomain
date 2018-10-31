@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="create.rwendomain">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon_img"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/icon_img"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.NoActionBar"
+        android:name="com.activeandroid.app.Application">
+        <activity
+            android:name=".activity.SplashActivity"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.AddDomainActivity"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:noHistory="true"/>
+        <activity android:name=".activity.LookDomainActivity"
+            android:noHistory="true"/>
+        <activity android:name=".activity.SerachActivity"
+            android:noHistory="true"/>
+        <activity android:name=".activity.CreateGestureActivity" />
+        <activity android:name=".activity.GestureLoginActivity"
+            android:noHistory="true"/>
+        <activity android:name=".activity.MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:noHistory="true"/>
+        <activity android:name=".activity.WebActivity"
+            android:noHistory="true"/>
+        <activity android:name=".activity.PayGridActivity" />
+        <activity android:name=".activity.AboutActivity"
+            android:noHistory="true"/>
+
+        <meta-data android:name="AA_DB_NAME" android:value="my_domain.db" />
+        <meta-data android:name="AA_DB_VERSION" android:value="1" />
+
+        <provider
+            android:name="com.activeandroid.content.ContentProvider"
+            android:authorities="create.rwendomain"
+            android:enabled="true"
+            android:exported="false">
+        </provider>
+    </application>
+
+</manifest>

@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#07f" >
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/left_back1"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="管理域名"
+            android:textColor="#fff"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_close_black_24dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"/>
+    </RelativeLayout>
+    <ImageView
+        android:id="@+id/hidden"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/down"
+        android:layout_gravity="center_horizontal"
+        />
+    <LinearLayout
+        android:id="@+id/linear_hidden"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/separator_background"
+        android:layout_marginBottom="10dp">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="用户名:"
+                android:textSize="16sp"/>
+            <TextView
+                android:id="@+id/web_username"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:textSize="16sp"
+                android:singleLine="true"
+                android:ellipsize="marquee"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:focusable="true"
+                android:focusableInTouchMode="true"/>
+            <Button
+                android:id="@+id/btn_copy1"
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:text="点击复制"
+                android:textColor="#fff"
+                android:textSize="10sp"
+                android:background="@drawable/btn_background"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="密码:"
+                android:layout_marginRight="5dp"
+                android:textSize="16sp"
+                android:layout_marginLeft="5dp"/>
+            <TextView
+                android:id="@+id/web_password"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:textSize="16sp"
+                android:singleLine="true"
+                android:ellipsize="marquee"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:inputType="textPassword"/>
+            <Button
+                android:id="@+id/btn_copy2"
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:text="点击复制"
+                android:textColor="#fff"
+                android:textSize="10sp"
+                android:background="@drawable/btn_background"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <WebView
+                android:id="@+id/webView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <RelativeLayout
+                android:id="@+id/nowifi"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#fff"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/iv"
+                    android:layout_centerHorizontal="true"
+                    android:text="点击重新加载"
+                    android:textColor="#000000"
+                    android:textSize="18sp" />
+
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>

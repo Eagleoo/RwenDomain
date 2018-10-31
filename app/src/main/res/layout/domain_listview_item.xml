@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#fff"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:visibility="gone"
+        android:background="@drawable/del"/>
+
+    <TextView
+        android:id="@+id/domain_remark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/delete"
+        android:textSize="16sp"
+        android:textColor="#07f" />
+
+    <TextView
+        android:id="@+id/domain_lable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/domain_remark"
+        android:layout_toRightOf="@id/delete"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#ff6600" />
+
+    <ImageView
+        android:id="@+id/domain_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="7dip"
+        android:layout_marginTop="10dip"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:src="@drawable/right" />
+
+
+
+</RelativeLayout>

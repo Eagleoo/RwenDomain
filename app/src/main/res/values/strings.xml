@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">域名管理系统</string>
+    <string name="action_settings">管理手势密码</string>
+    <string name="action_edit">编辑</string>
+
+    <!-- Splash activity  -->
+    <string name="splash_activity">SplashActivity</string>
+
+    <!-- Gesture login activity -->
+    <string name="gesture_forget_gesture">忘记手势密码</string>
+    <string name="gesture_default">请输入手势密码</string>
+    <string name="gesture_error">手势密码输入错误</string>
+    <string name="gesture_correct">输入正确</string>
+
+    <!-- Create gesture activity -->
+    <string name="create_gesture_activity">CreateGestureActivity</string>
+    <string name="create_gesture_default">绘制解锁图案</string>
+    <string name="create_gesture_correct">再次绘制解锁图案</string>
+    <string name="create_gesture_less_error">至少连接4个点，请重新输入</string>
+    <string name="create_gesture_confirm_error">与上一次绘制不一致，请重新绘制</string>
+    <string name="create_gesture_confirm_correct">设置成功</string>
+    <string name="create_gesture_reset">重新设置</string>
+
+    <string name="care">注：你添加的信息均采用本地加密存储，不会向\n互联网和其他人发送任何信息</string>
+
+    <string name="cancle">取消</string>
+    <string name="title">请选择时间</string>
+    <string name="commit">确定</string>
+    <string name="year">年</string>
+    <string name="month">月</string>
+    <string name="day">日</string>
+    <string name="hour">时</string>
+    <string name="minute">分</string>
+    <string name="warn_title">以下域名即将过期</string>
+
+    <string name="about">   "         "四川人文在线网络服务有限公司坐落在有悠久历史文化且美丽的天府之都—四川成都，简称：人文网www.rwen.com，人文网创立于2004年，是一家专业为国内、外企业提供全面的基于互联网网络商务解决方案的应用服务网络公司。\n\n
+            "         "是获得信息产业部电信增值业务经营许可证( ICP )的专业化服务商之一；专精于高品质多媒体互动制作的全方位设计行销公司，同时也拥有实力强大的研发团队及顶尖素养的设计专才，多年来活跃在与创意产业相关的高端网站设计与开发、软件定制开发、手机网络客户端开发、全球域名注册、虚拟主机、 VPS 主机、云服务器、主机租用托管、企业邮箱、 SEO 网络推广、品牌形象的各个领域互联网整合服务。人文网（ Renwen Online ）一直致力于建立更多更好的互联网品牌形象，提供权威专业的互联网品牌策划，并实施高标准的设计方案，保证我们服务的客户能够得到标准、专业、优质的互联网应用服务,智慧运用科技力量，成就客戶理想。
+\n\n"         "当前，我们正在为实现“领先的企业信息化基础服务提供商”而努力。做您身边最近的网络公司，最好的合作伙伴！
+
+</string>
+
+</resources>

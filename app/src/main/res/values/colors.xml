@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3693D0</color>
+    <color name="colorPrimaryDark">#0957A7</color>
+    <color name="colorAccent">#3693D0</color>
+
+    <color name="swipeoption_green">#36CF8E</color>
+    <color name="swipeoption_blue">#3693D0</color>
+    <color name="swipeoption_purple">#ff1744</color>
+
+    <color name="grey_f6f6f6">#f6f6f6</color>
+    <color name="grey_a5a5a5">#A5A5A5</color>
+    <color name="grey_dde1e7">#DDE1E7</color>
+    <color name="red_f4333c">#F4333C</color>
+
+    <color name="color_unit">#F0F0F0</color>
+    <color name="color_item_bg">#FFFFFF</color>
+    <color name="color_text_unselected">#B0B0B0</color>
+    <color name="color_desc">#666666</color>
+    <color name="color_result">#57C5E8</color>
+    <color name="color_bg">#000000</color>
+    <color name="color_gold">#ffda53</color>
+    <color name="transparent_half">#23000000</color>
+    <color name="gap_line">#e2e2e2</color>
+    <color name="color_333333">#333333</color>
+    <color name="color_777572">#777572</color>
+    <color name="white">#ffffff</color>
+    <color name="item_bg">#e5e5e5</color>
+    <color name="transparent">#00000000</color>
+    <color name="color_dialog_gray">#ededf3</color>
+    <color name="color_dialog_content">#ed7861</color>
+    <color name="color_dialog_title">#303030</color>
+    <color name="color_dialog_content_prompt">#343434</color>
+
+    <color name="color_type_info">#79b3e4</color>
+    <color name="color_type_help">#e8bd4b</color>
+    <color name="color_type_wrong">#ed7861</color>
+    <color name="color_type_warning">#FF0000</color>
+    <color name="color_type_success">#90b06e</color>
+</resources>

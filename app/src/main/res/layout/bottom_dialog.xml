@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/dialog_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/left_back2"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="选择续费年数"
+            android:textSize="16sp"
+            android:textColor="#000"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <create.rwendomain.widget.PickerScrollView
+            android:id="@+id/pickeryears"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="#ffffff" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@id/pickerscrlllview"
+            android:layout_centerVertical="true"
+            android:background="@drawable/picker_tv_bg" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="国际规定续费年限不能超过10年"
+        android:background="@drawable/separator_background"
+        android:layout_margin="10dp"
+        android:layout_gravity="center_horizontal"/>
+    <Button
+        android:id="@+id/pay_ok"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="确 定"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:background="@color/blue_78d2f6"/>
+
+</LinearLayout>

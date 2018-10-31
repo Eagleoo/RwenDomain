@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.MainActivity">
+
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/add"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="10dp"
+        android:background="@color/swipeoption_blue"/>
+    <Button
+        android:id="@+id/finish"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/btn_background"
+        android:visibility="gone"
+        android:text="完成"
+        android:textColor="#fff"/>
+    <LinearLayout
+        android:id="@+id/tv_linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autoLink="web"
+            android:gravity="center"
+            android:text="专业云服务器提供商 - 人文网"
+            android:textColor="#ff6600" />
+        <TextView
+            android:id="@+id/rwen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="http://www.rwen.com"
+            android:textColor="@color/colorPrimary" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autoLink="phone"
+            android:gravity="center"
+            android:text="联系电话 028-86619097"
+            android:textColor="#ff6600" />
+
+    </LinearLayout>
+    <RelativeLayout
+        android:id="@+id/rel_nodata"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:visibility="gone">
+        <ImageView
+            android:id="@+id/no_img"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@drawable/no_data"
+            android:layout_centerInParent="true"/>
+
+
+    </RelativeLayout>
+
+
+
+    <TextView
+        android:id="@+id/list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="域名列表(支持自有域名及人文网域名管理)"
+        android:layout_toRightOf="@+id/img"
+        android:textColor="#0B6467"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:layout_marginLeft="5dp"
+        android:layout_below="@+id/toolbar"/>
+
+    <create.rwendomain.widget.SubPtrSwipe
+        android:id="@+id/refresh_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_above="@+id/tv_linear"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/domain_listView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dp"
+            android:layoutAnimation="@anim/layout_animation_fall_down"/>
+    </create.rwendomain.widget.SubPtrSwipe>
+    <RelativeLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/colorPrimary" >
+
+        <TextView
+            android:id="@+id/tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="25dp"
+            android:text="域名管理系统"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:textSize="20sp"
+            />
+        <ImageView
+            android:id="@+id/more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_more_vert_black_24dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"/>
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/explore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/search"
+        android:layout_marginRight="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="15dp"/>
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/domain"
+        android:layout_below="@+id/toolbar"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="10dp" />
+
+    <Button
+        android:id="@+id/btn_add"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="400dp"
+        android:text="添加域名"
+        android:background="@drawable/btn_background"
+        android:backgroundTint="@color/blue_78d2f6"
+        android:textColor="@color/white"
+        android:clickable="true"
+        android:onClick="onclick"
+        android:focusable="true"
+        android:visibility="gone"/>
+</RelativeLayout>
